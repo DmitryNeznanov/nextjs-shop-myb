@@ -11,7 +11,7 @@
   --black-squeeze: #f0f7fa;
 
   --white: #ffffff;
-  --titan-white: #f5f5ff;
+  --white-titan: #f5f5ff;
 
   --red: #ff4d4f;
   --red-400: #ff9293;
@@ -25,14 +25,63 @@
   --gray-100: #f4f4f4;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 @layer base {
+  h1 {
+    @apply text-[48px] font-medium md:text-[72px] md:font-[700];
+  }
+  h2 {
+    @apply text-[48px] font-[600];
+  }
+  h3 {
+    @apply text-[36px] font-[600];
+  }
+  h4 {
+    @apply text-[24px] font-[600];
+  }
+  h5 {
+    @apply text-[20px] font-[600];
+  }
+  h6 {
+    @apply text-[16px] font-[600];
+  }
+  p {
+    @apply text-black;
+  }
 }
 @layer components {
+  .p-sm-regular {
+    @apply text-[12px] font-[400];
+  }
+  .p-sm-semi {
+    @apply text-[12px] font-[600];
+  }
+  .p-md-regular {
+    @apply text-[14px] font-[400];
+  }
+  .p-md-semi {
+    @apply text-[14px] font-[600];
+  }
+  .p-lg-regular {
+    @apply text-[16px] font-[400];
+  }
+  .p-lg-semi {
+    @apply text-[16px] font-[600];
+  }
+  .p-lg-extra {
+    @apply text-[16px] font-[700];
+  }
+  .p-xl-regular {
+    @apply text-[20px] font-[400];
+  }
+  .p-xl-semi {
+    @apply text-[20px] font-[600];
+  }
+  .p-2xl {
+    @apply text-[24px] font-extrabold uppercase;
+  }
+  .p-3xl {
+    @apply text-[36px] font-extrabold;
+  }
 }
 @layer utilities {
 }

@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export default {
   content: [
@@ -8,11 +8,48 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "375px",
+        "2xl": "1920px",
+      },
+      container: {
+        center: true,
+        padding: {
+          xs: "24px",
+          sm: "48px",
+          lg: "72px",
+          xl: "188px",
+          "2xl": "188px",
+        },
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        danger: "var(--danger)",
+        muted: "var(--muted)",
+        black: {
+          DEFAULT: "var(--black)",
+          squeeze: "var(--black-squeeze)",
+        },
+        white: {
+          DEFAULT: "var(--white)",
+          titan: "var(--white-titan)",
+        },
+        red: {
+          DEFAULT: "var(--red)",
+          "200": "var(--red-200)",
+          "300": "var(--red-300)",
+          "400": "var(--red-400)",
+        },
+        indigo: {
+          DEFAULT: "var(--indigo)",
+          "600": "var(--indigo-600)",
+        },
+        gray: {
+          DEFAULT: "var(--gray)",
+          "100": "var(--gray-100)",
+        },
       },
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config
