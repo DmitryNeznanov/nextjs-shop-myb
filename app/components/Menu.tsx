@@ -6,24 +6,25 @@ export default function Menu() {
   const pathName = usePathname()
 
   return (
-    <ul>
+    <ul className="flex flex-col items-center gap-y-[60px] capitalize">
       {[
         ["discover", "/"],
         ["make your burger", "/burger"],
       ].map(([text, link], i) => {
-        console.log(pathName, pathName.length)
-
         return (
-          <li key={i}>
+          <li
+            className="w-max text-center"
+            key={i}
+          >
             <Link
-              className={`${
+              className={`relative p-lg ${
                 pathName === "/" && link === pathName
-                  ? "underline"
+                  ? "underline-primary p-lg-semi"
                   : pathName.includes(link) && link !== "/"
-                  ? "underline"
+                  ? "underline-primary p-lg-semi"
                   : ""
               }`}
-              href={`${link}`}
+              href={link}
             >
               {text}
             </Link>

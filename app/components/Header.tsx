@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import ToggleMobileMenuButton from "./ToggleMobileMenuButton"
 import Menu from "./Menu"
+import ProfileCard from "./ProfileCard"
 export default function Header() {
   return (
     <header className="container pt-[12px] md:pt-[32px]">
@@ -9,7 +10,7 @@ export default function Header() {
         <div>
           <Link href="/">
             <Image
-              className="xl:max-w-[80px] md:max-h-[80px]"
+              className="md:w-[80px] md:h-[80px]"
               src="./svg/logo.svg"
               width={48}
               height={48}
@@ -31,7 +32,7 @@ export default function Header() {
         className="relative"
         id="mobileMenu"
       >
-        <nav className="absolute w-full bg-red">
+        <nav className="pt-[32px] pb-[48px] absolute w-full flex flex-col justify-between items-center bg-red-200">
           <address>
             <Link
               className="p-lg-semi hover:underline"
@@ -41,6 +42,7 @@ export default function Header() {
             </Link>
           </address>
           <Menu />
+          <ProfileCard />
         </nav>
       </div>
     </header>

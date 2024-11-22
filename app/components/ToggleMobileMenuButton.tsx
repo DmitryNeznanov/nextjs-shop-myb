@@ -18,7 +18,7 @@ export default function ToggleMobileMenuButton() {
       }}
     >
       <Image
-        className="bg-white-titan rounded-full"
+        className="md:w-[80px] md:h-[80px] bg-white-titan rounded-full"
         src={`${
           menu === false ? "./icons/menu-open.svg" : "./icons/menu-close.svg"
         }`}

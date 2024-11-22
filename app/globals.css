@@ -85,6 +85,9 @@
   .p-3xl {
     @apply text-[36px] font-extrabold;
   }
+  .underline-primary {
+    @apply flex after:content-[''] after:absolute after:w-full after:h-[3px] after:-mb-[10px] after:bottom-0 after:rounded-full after:bg-primary;
+  }
 }
 @layer utilities {
 }
