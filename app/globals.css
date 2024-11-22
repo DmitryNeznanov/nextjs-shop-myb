@@ -26,6 +26,9 @@
 }
 
 @layer base {
+  address {
+    font-style: normal;
+  }
   h1 {
     @apply text-[48px] font-medium md:text-[72px] md:font-[700];
   }

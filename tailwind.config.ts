@@ -49,6 +49,9 @@ export default {
           "100": "var(--gray-100)",
         },
       },
+      content: {
+        phone: "url('./public/icons/phone.svg')",
+      },
     },
   },
   plugins: [],
