@@ -6,8 +6,9 @@ export default function ToggleMobileMenuButton() {
   const [menu, toggleMenu] = useState(true)
 
   function openMenu() {
-    const menu = document.getElementById("mobileMenu")
-    menu?.classList.toggle("hidden")
+    const menu = document.getElementById("mobileMenu")!
+    menu.classList.toggle("hidden")
+    menu.classList.toggle("w-screen")
     toggleMenu(!menu)
   }
   return (

@@ -10,7 +10,7 @@ export default function ProfileCard() {
   return (
     <section className="flex relative flex-col items-center">
       <button
-        className="p-[16px] bg-white-titan rounded-full"
+        className="w-max p-[16px] bg-white-titan rounded-full"
         onClick={() => {
           openProfileMenu()
         }}

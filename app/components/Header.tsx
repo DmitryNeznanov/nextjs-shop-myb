@@ -1,15 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
 import ToggleMobileMenuButton from "./ToggleMobileMenuButton"
-import Menu from "./Menu"
-import ProfileCard from "./ProfileCard"
+
+import MobileMenu from "./MobileMenu"
 export default function Header() {
   return (
     <header
-      className="container pt-[12px] md:pt-[32px]"
+      className="container"
       id="header"
     >
-      <nav className="flex flex-row justify-between items-center relative">
+      <nav
+        className="pt-[12px] md:pt-[32px] flex flex-row justify-between items-center relative"
+        id="headerNav"
+      >
         <div>
           <Link href="/">
             <Image
@@ -31,24 +34,7 @@ export default function Header() {
         </address>
         <ToggleMobileMenuButton />
       </nav>
-      <div
-        className="relative"
-        id="mobileMenu"
-      >
-        <nav className="pt-[32px] pb-[48px] flex flex-col justify-between overflow-hidden items-center bg-red-200">
-          <address>
-            <Link
-              className="p-lg-semi hover:underline"
-              href="tel:88004378722"
-            >
-              8 800 437-87-22
-            </Link>
-          </address>
-          <Menu />
-          <ProfileCard />
-          <div className="w-1 h-1 mt-auto"></div>
-        </nav>
-      </div>
+      <MobileMenu />
     </header>
   )
 }
