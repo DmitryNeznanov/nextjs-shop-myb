@@ -5,7 +5,10 @@ import Menu from "./Menu"
 import ProfileCard from "./ProfileCard"
 export default function Header() {
   return (
-    <header className="container pt-[12px] md:pt-[32px]">
+    <header
+      className="container pt-[12px] md:pt-[32px]"
+      id="header"
+    >
       <nav className="flex flex-row justify-between items-center relative">
         <div>
           <Link href="/">
@@ -32,7 +35,7 @@ export default function Header() {
         className="relative"
         id="mobileMenu"
       >
-        <nav className="pt-[32px] pb-[48px] absolute w-full flex flex-col justify-between items-center bg-red-200">
+        <nav className="pt-[32px] pb-[48px] flex flex-col justify-between overflow-hidden items-center bg-red-200">
           <address>
             <Link
               className="p-lg-semi hover:underline"
@@ -43,6 +46,7 @@ export default function Header() {
           </address>
           <Menu />
           <ProfileCard />
+          <div className="w-1 h-1 mt-auto"></div>
         </nav>
       </div>
     </header>

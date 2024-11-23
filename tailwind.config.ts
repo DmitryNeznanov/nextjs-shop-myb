@@ -52,6 +52,9 @@ export default {
       content: {
         phone: "url('./public/icons/phone.svg')",
       },
+      boxShadow: {
+        xl: "0px 0px 21px -5px rgba(0,0,0,0.42)",
+      },
     },
   },
   plugins: [],

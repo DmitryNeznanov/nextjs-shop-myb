@@ -6,7 +6,7 @@ export default function Menu() {
   const pathName = usePathname()
 
   return (
-    <ul className="flex flex-col items-center gap-y-[60px] capitalize">
+    <ul className="flex flex-col items-center capitalize">
       {[
         ["discover", "/"],
         ["make your burger", "/burger"],
