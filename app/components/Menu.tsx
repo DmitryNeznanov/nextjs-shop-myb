@@ -6,14 +6,14 @@ export default function Menu() {
   const pathName = usePathname()
 
   return (
-    <ul className="flex flex-col gap-y-[73px] items-center capitalize">
+    <ul className="w-max flex flex-col gap-y-[73px] items-center capitalize">
       {[
         ["discover", "/"],
         ["make your burger", "/burger"],
       ].map(([text, link], i) => {
         return (
           <li
-            className="w-max text-center"
+            className="text-center"
             key={i}
           >
             <Link

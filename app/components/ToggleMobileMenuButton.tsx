@@ -6,14 +6,15 @@ export default function ToggleMobileMenuButton() {
   const [menu, toggleMenu] = useState(true)
 
   function openMenu() {
-    const menu = document.getElementById("mobileMenu")!
-    menu.classList.toggle("hidden")
-    menu.classList.toggle("w-screen")
+    const mobileMenu = document.getElementById("mobileMenu")!
+    mobileMenu.classList.toggle("w-[0%]")
+    mobileMenu.classList.toggle("w-[100%]")
+    document.body.classList.toggle("overflow-hidden")
+    window.scrollTo(0, 0)
     toggleMenu(!menu)
   }
   return (
     <button
-      className=""
       onClick={() => {
         openMenu()
       }}
@@ -21,7 +22,7 @@ export default function ToggleMobileMenuButton() {
       <Image
         className="md:w-[80px] md:h-[80px] bg-white-titan rounded-full"
         src={`${
-          menu === false ? "./icons/menu-open.svg" : "./icons/menu-close.svg"
+          menu === true ? "./icons/menu-open.svg" : "./icons/menu-close.svg"
         }`}
         width={48}
         height={48}

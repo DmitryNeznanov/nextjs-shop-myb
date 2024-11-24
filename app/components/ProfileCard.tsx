@@ -8,7 +8,7 @@ export default function ProfileCard() {
     profileMenu?.classList.toggle("hidden")
   }
   return (
-    <section className="flex relative flex-col items-center">
+    <section className="w-max flex relative flex-col items-center">
       <button
         className="w-max p-[16px] bg-white-titan rounded-full"
         onClick={() => {

@@ -26,7 +26,7 @@ export default function Header() {
         </div>
         <address className="w-max h-max bg-red-200 rounded-full">
           <Link
-            className="block px-[12px] py-[6px] p-lg-semi text-danger capitalize hover:underline before:content-[url('/icons/phone.svg')] before:mr-[4px]"
+            className="block px-[12px] py-[6px] p-lg-semi text-danger capitalize hover:underline mr-0 before:content-[url('/icons/phone.svg')] before:mr-[4px]"
             href="tel:88004378722"
           >
             call me back

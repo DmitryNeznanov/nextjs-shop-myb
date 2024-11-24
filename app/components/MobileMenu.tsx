@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link"
 import Menu from "./Menu"
 import ProfileCard from "./ProfileCard"
 import { useLayoutEffect } from "react"
@@ -23,7 +22,7 @@ export default function MobileMenu() {
 
   return (
     <nav
-      className="pt-[32px] pb-[48px] flex flex-col justify-between items-center absolute right-0 bg-red-200 duration-1000"
+      className="pt-[32px] pb-[48px] flex flex-col justify-between items-center  absolute z-[9999] right-0 w-[0%] overflow-hidden test bg-white"
       id="mobileMenu"
     >
       <Address />
